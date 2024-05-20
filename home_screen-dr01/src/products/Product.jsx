@@ -100,31 +100,8 @@ const Product = () => {
         </div>
       </section>
       <div className="container-terms">
-        <footer class="py-3" id="#footer">
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a
-                href="https://www.infobytestechnosys.in/privacy1.html"
-                class="nav-link px-2 text-body-secondary"
-              >
-                Privacy and Policies
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://www.infobytestechnosys.in/term.html"
-                class="nav-link px-2 text-body-secondary"
-              >
-                Terms and Conditions
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="/delete.html" class="nav-link px-2 text-body-secondary">
-                Delete Account
-              </a>
-            </li>
-          </ul>
-        </footer>
+       \
+         
       </div>
     </div>
   );
