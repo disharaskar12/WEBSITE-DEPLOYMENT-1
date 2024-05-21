@@ -1,131 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!-- Include SweetAlert CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"
-    />
-
-    <!-- Include SweetAlert JS -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
-
-    <link rel="stylesheet" href="style2.css" />
-  </head>
-  <body
-    style="
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>PayTrakz</title>
+	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet" /><!-- Include SweetAlert CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css" rel="stylesheet" /><!-- Include SweetAlert JS --><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+	<link href="style2.css" rel="stylesheet" />
+</head>
+<body aria-readonly="false" style="
       background: linear-gradient(135deg, rgb(253, 197, 0), rgb(255, 213, 0));
-    "
-  >
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand"
-          ><img src="D:\website\MY_TASK1\images\pay.jpg" style="width: 50%"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <!-- <li class="nav-item">
+    ">
+<h2><span style="font-size:14px;"><a href="http://infobytestechnosys.in">Home</a></span></h2>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid"><a class="navbar-brand"><img src="/images/pay.jpg" style="width: 50%" /></a><button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"></button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0"><!-- <li class="nav-item">
             <img src="/images/mobile-icon-01-01.jpg" />
           </li> -->
+	<li class="nav-item"><a class="nav-link" href="/contact.html"><img class="float-md-end" height="25%" src="/images/playstore.png" width="25%" /></a></li>
+</ul>
+</div>
+</div>
+</nav>
 
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html"
-                ><img
-                  src="D:\website\MY_TASK1\images\playstore.png"  
-                  height="25%"
-                  width="25%"
-                  class="float-md-end"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <main>
-      <div class="form-container">
-        <form>
-          <!-- <form onsubmit=" return validate()"> -->
-          <!-- <form onsubmit=" return openPopup()"> -->
-          <h2>Close Account</h2>
-          <hr />
-          <p>Permanently delete all account information and services data</p>
-          Email:<br />
-          <input
-            type="email"
-            class="form-control"
-            required
-            placeholder="Email ID"
-            id="n1"
-            style="width: 100%"
-            ;
-          />
-          <br />Mobile Number:<br />
-          <input
-            type="text"
-            class="form-control"
-            required
-            placeholder="Mobile Number"
-            id="n2"
-            style="width: 100%"
-          /><br /><br />
-          <!-- <br />Password:<br /> -->
-          <!-- <input
+<main>
+<div class="form-container">
+<form><!-- <form onsubmit=" return validate()"> --><!-- <form onsubmit=" return openPopup()"> -->
+<h2>Close Account</h2>
+
+<hr />
+<p>Permanently delete all account information and services data</p>
+Email:<br />
+<input class="form-control" id="n1" placeholder="Email ID" required="" style="width: 100%" type="email" /><br />
+Mobile Number:<br />
+<input class="form-control" id="n2" placeholder="Mobile Number" required="" style="width: 100%" type="text" /><br />
+<br />
+<!-- <br />Password:<br /> --> <!-- <input
             type="password"
             placeholder="Password"
             style="width: 100%"
             id="n3"
-          /><br /><br /> -->
-          Reason for closing your account?
-          <label for="d-option" class="form-label"></label><br />
-          <select id="d-option" name="selected_option">
-            <option value="data">Concerned about my data</option>
-            <option value="account">Created second account</option>
-            <option value="ads">Too many ads</option>
-            <option value="concern">Privacy concerns</option>
-            <option value="other">Other</option>
-          </select>
-          <br /><br />
-
-          <label for="improvement" class="form-label"
-            >If others, please specify (Optional)</label
-          ><br />
-          <textarea
-            id="improvement"
-            name="improvement"
-            rows="4"
-            columns="4"
-            style="width: 100%"
-          ></textarea
-          ><br />
-          <input
-            id="show-alert"
-            type="submit"
-            class="form-control"
-            value="Submit"
-            class="submit"
-            onclick
-          />
-          <!-- <div class="container">
+          /><br /><br /> --> Reason for closing your account?<br />
+<select id="d-option" name="selected_option"><option value="data">Concerned about my data</option><option value="account">Created second account</option><option value="ads">Too many ads</option><option value="concern">Privacy concerns</option><option value="other">Other</option> </select><br />
+<br />
+<label class="form-label" for="improvement">If others, please specify (Optional)</label><br />
+<textarea columns="4" id="improvement" name="improvement" rows="4" style="width: 100%"></textarea><br />
+<input class="form-control" id="show-alert" onclick="" type="submit" value="Submit" /> <!-- <div class="container">
             <button type="submit" class="btn" onclick="openPopup()">
               Submit
             </button>
@@ -134,35 +54,20 @@
             <h2>Done!</h2>
             <p>Your account has been deleted successfully</p>
             <button type="button" onclick="closePopup()">OK</button>
-          </div> -->
-        </form>
-      </div>
-    </main>
+          </div> --></form>
+</div>
+</main>
 
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item">
-          <a href="\privacy1.html" class="nav-link px-2 text-body-secondary"
-            >Privacy and Policies</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="\term.html" class="nav-link px-2 text-body-secondary"
-            >Terms & Conditions</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="\delete.html" class="nav-link px-2 text-body-secondary"
-            >Delete Account</a
-          >
-        </li>
-      </ul>
-    </footer>
-    <script
+<footer class="py-3 my-4">
+<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+	<li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="/privacy1.html">Privacy and Policies</a></li>
+	<li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="/term.html">Terms &amp; Conditions</a></li>
+	<li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="/delete.html">Delete Account</a></li>
+</ul>
+</footer>
+<script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+    ></script><script src="script.js"></script></body>
 </html>
