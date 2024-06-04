@@ -52,6 +52,9 @@
     font-weight: bolder;
     margin-top: 80px;
   }
+  .footer-add {
+    font-size: 12px;
+  }
   
   @media (min-width:300px)and(max-width:678px){
     .footer-content {

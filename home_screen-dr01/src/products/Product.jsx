@@ -100,7 +100,7 @@ const Product = () => {
         </div>
       </section>
       <div className="container-terms">
-       \
+    
          
       </div>
     </div>

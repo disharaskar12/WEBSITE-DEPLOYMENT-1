@@ -15,32 +15,30 @@ export default function Footer() {
         </div>
 
         <div className="footer-section-3">
-        <li class="nav-item">
-              <a
-                href="https://www.infobytestechnosys.in/privacy1.html"
-                class="nav-link px-2 text-body-secondary"
-              >
-                Privacy and Policies
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://www.infobytestechnosys.in/term.html"
-                class="nav-link px-2 text-body-secondary"
-              >
-                Terms and Conditions
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://www.infobytestechnosys.in/delete.html"
-                class="nav-link px-2 text-body-secondary"
-              >Delete Account
-              </a>
-            </li>
-            
-        
-
+          <li class="nav-item">
+            <a
+              href="https://www.infobytestechnosys.in/privacy1.html"
+              class="nav-link px-2 text-body-secondary"
+            >
+              Privacy and Policies
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.infobytestechnosys.in/term.html"
+              class="nav-link px-2 text-body-secondary"
+            >
+              Terms and Conditions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="https://www.infobytestechnosys.in/delete.html"
+              class="nav-link px-2 text-body-secondary"
+            >
+              Delete Account
+            </a>
+          </li>
         </div>
 
         <div className="footer-section"></div>
@@ -50,7 +48,13 @@ export default function Footer() {
             <span className="footer-icon">✉️</span>
             <strong>Contact Us</strong>
           </h6>
-          <p>reachus@infobytestechnosysys.in</p>
+          <p>
+            reachus@infobytestechnosysys.in   </p>
+             <p className="footer-add">Address: C/O.VITTHAL JAGTAP,
+            DAUNDKURKUMBH RD <br />
+            BORAWKENAGAR, Gopalwadi, Pune,<br /> Daund, Maharashtra, 
+            India, 413801 <br />
+          </p>
         </div>
       </section>
 
